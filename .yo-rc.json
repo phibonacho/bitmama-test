@@ -1,0 +1,25 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "spo",
+    "whichFolder": "subdir",
+    "version": "1.11.0",
+    "libraryName": "test-reply-extension",
+    "libraryId": "9ffaba7c-f173-4eb9-9492-2c739c52d1c3",
+    "packageManager": "npm",
+    "isDomainIsolated": false,
+    "componentType": "extension",
+    "extensionType": "ApplicationCustomizer"
+  },
+  "generator-yeogurt": {
+    "config": {
+      "existingConfig": false,
+      "projectName": "bitmama-test",
+      "htmlOption": "nunjucks",
+      "cssOption": "sass",
+      "sassSyntax": "scss",
+      "testFramework": "none"
+    },
+    "version": "3.1.2"
+  }
+}

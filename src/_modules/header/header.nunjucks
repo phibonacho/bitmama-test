@@ -1,0 +1,29 @@
+{% macro content(spec) %}
+
+{% set spec = spec or {} %}
+
+<header class="totem-header">
+  <div class="totem-header__wrapper">
+    <div class="totem-header__wrapper__left">
+      <div class="totem-header__dropdown">
+        ciao sono un dropdown
+      </div>
+      <a class="totem-header__link" href="#">
+        link 1
+      </a>
+      <a class="totem-header__link" href="#">
+        link2
+      </a>
+    </div>
+    <div class="totem-header__wrapper__center">
+
+    </div>
+    <div class="totem-header__wrapper__right">
+        <div class="totem-header__dropdown">
+          Dropdown
+        </div>
+        <button class="totem-header__button">BOTTONE</button>
+    </div>
+  </div>
+</header>
+{% endmacro %}
