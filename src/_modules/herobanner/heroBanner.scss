@@ -1,0 +1,11 @@
+// herobanner styles
+
+.heroBanner {
+  &__wrapper {
+    width: 100%;
+    height: calc(100vh - 160px);
+    background: orange;
+    overflow: hidden;
+  }
+
+}

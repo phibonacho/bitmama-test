@@ -1,6 +1,9 @@
 // header styles
 
 .totem-header { // block
+  position: fixed;
+  width: 100%;
+  background: #ABC2E1;
   &__wrapper {
     border: 1px solid red;
     width: 100%;

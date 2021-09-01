@@ -2,22 +2,43 @@
 
 {% import "_modules/link/link.nunjucks" as link %}
 {% import "_modules/header/header.nunjucks" as header %}
+{% import "_modules/herobanner/heroBanner.nunjucks" as heroBanner %}
+{% import "_modules/newssection/newsSection.nunjucks" as newsSection %}
+{% import "_modules/teamsection/teamSection.nunjucks" as teamSection %}
+{% import "_modules/partnersection/partnerSection.nunjucks" as partnerSection %}
+{% import "_modules/footer/footer.nunjucks" as footer %}
 
 {% block content %}
-<div class="main-container">
-  {{ header.content({ title: "AO"}) }}
-  <div class="yeogurt-info">
-    <h1>Welcome to Yeogurt!</h1>
-    <p>
-      Take a look at the {{link.content({
-        href: 'https://github.com/larsonjj/generator-yeogurt#yeogurt-generator---',
-        text: 'documentation'
-      })}} and start mixing up something awesome.
-    </p>
-    <p>
-      <img src="images/yeogurt-swirl.png" width="75px" class="logo" />
-    </p>
+  <div class="main-container">
+    {{ header.content() }}
+
+    {{ heroBanner.content({
+      videoUrl: "https://replytotem.com/wp-content/uploads/2021/07/Udoo-1.mp4"
+    })
+    }}
+
+    {{ newsSection.content({
+      title: 'Ultime notizie'
+    }) }}
+
+    {{ teamSection.content({
+      title: "Teams",
+      urls: [
+        "https://replytotem.com/wp-content/uploads/2021/05/apex.jpg",
+        "https://replytotem.com/wp-content/uploads/2021/06/brawl_quadrato_1.png",
+        "https://replytotem.com/wp-content/uploads/2021/05/fortnite.jpg"
+      ]
+    }) }}
+
+    {{ partnerSection.content({
+      title: 'I nostri partner',
+      featuredSponsor: 'reply',
+      sponsors: [
+        'kaspersky',
+        'udoo',
+        'blufast',
+        'sols-europe'
+      ]
+    }) }}
   </div>
-</div>
-<code class="version">v3.1.2</code>
 {% endblock %}

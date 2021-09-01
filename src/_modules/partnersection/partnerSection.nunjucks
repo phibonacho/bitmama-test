@@ -1,0 +1,26 @@
+{% macro content(spec) %}
+
+  {% set spec = spec or {} %}
+  {% set _title = spec.title or '' %}
+  {% set _sponsors = spec.sponsors or [] %}
+  {% set _featuredSponsor = spec.featuredSponsor or '' %}
+
+
+  <div class="partnerSection">
+    <h2 class="partnerSection__title">{{ _title }}</h2>
+
+    <ul class="partnerSection__wrapper">
+      {% if _featuredSponsor %}
+        <li class="partner-item--featured">
+            {{ _featuredSponsor }}
+        </li>
+      {% endif %}
+
+      {% for sponsor in _sponsors %}
+        <li class="partner-item">
+          {{ sponsor }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endmacro %}
