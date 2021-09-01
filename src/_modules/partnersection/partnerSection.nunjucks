@@ -11,13 +11,13 @@
 
     <ul class="partnerSection__wrapper">
       {% if _featuredSponsor %}
-        <li class="partner-item--featured">
+        <li class="partner__item--featured">
             {{ _featuredSponsor }}
         </li>
       {% endif %}
 
       {% for sponsor in _sponsors %}
-        <li class="partner-item">
+        <li class="partner__item">
           {{ sponsor }}
         </li>
       {% endfor %}

@@ -1,1 +1,29 @@
 // footer styles
+.footer {
+  background-image: radial-gradient(farthest-corner at right top,#193449 0,#000 75%);
+  &__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    padding: 1rem 5rem;
+    max-width: 50vw;
+  }
+
+  &__left {
+    flex: 1 0 75%;
+    max-width: 75%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__right {
+    flex: 1 0 25%;
+    max-width: 25%;
+  }
+
+  &__copyright {
+    color: white;
+    padding: 1rem 15rem;
+    background: #4f4f4f;
+  }
+}

@@ -3,7 +3,30 @@
 {% set spec = spec or {} %}
 {% set _class = spec.class or '' %}
 
-<div class="{{_class}}">
-  <p>This is an example paragraph for the footer module</p>
+<div class="footer">
+  <div class="footer__wrapper">
+    <div class="footer__left">
+      <img src="https://replytotem.com/wp-content/themes/totem/build/images/general/joystick.png"
+           height="400px"
+           width="400px"
+           alt="a joystick, never heard of it?">
+    </div>
+    <div class="contact_right">
+      <div class="footer__links">
+        <h2>Seguici sui social</h2>
+        <ul>
+          <li>icona 1</li>
+          <li>icona 2</li>
+          <li>icona 3</li>
+          <li>icona 4</li>
+        </ul>
+        <h2>Contattaci</h2>
+        <a href="#">Scrivi, ti prego, ci manchi</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__copyright">
+    &copy; 2020 Totem All rights reserved.
+  </div>
 </div>
 {% endmacro %}

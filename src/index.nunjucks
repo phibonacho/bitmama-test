@@ -21,14 +21,7 @@
       title: 'Ultime notizie'
     }) }}
 
-    {{ teamSection.content({
-      title: "Teams",
-      urls: [
-        "https://replytotem.com/wp-content/uploads/2021/05/apex.jpg",
-        "https://replytotem.com/wp-content/uploads/2021/06/brawl_quadrato_1.png",
-        "https://replytotem.com/wp-content/uploads/2021/05/fortnite.jpg"
-      ]
-    }) }}
+    {{ teamSection.content(site.data.team) }}
 
     {{ partnerSection.content({
       title: 'I nostri partner',
@@ -40,5 +33,6 @@
         'sols-europe'
       ]
     }) }}
+    {{ footer.content() }}
   </div>
 {% endblock %}
