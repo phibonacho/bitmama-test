@@ -6,11 +6,11 @@
 {% set _urls = spec.urls or [] %}
 
 <div class="teamSection">
-  <div class="teamSection__wrapper">
-    <div class="teamSection__title">
-      <h2>{{ _title }}</h2>
-    </div>
+  <div class="teamSection__title">
+    <h2>{{ _title }}</h2>
+  </div>
 
+  <div class="teamSection__wrapper">
     {% for url in _urls %}
       <div class="teamSection__item">
         <img src="{{ url }}" alt="an image, you fuck.">

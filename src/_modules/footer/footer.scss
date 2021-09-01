@@ -4,21 +4,37 @@
   &__wrapper {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
     margin: auto;
-    padding: 1rem 5rem;
-    max-width: 50vw;
+    padding: 1rem 3rem;
+    max-width: 1200px;
   }
 
   &__left {
-    flex: 1 0 75%;
-    max-width: 75%;
+    flex: 1 0 60%;
+    max-width: 60%;
     display: flex;
     justify-content: flex-end;
   }
 
   &__right {
-    flex: 1 0 25%;
-    max-width: 25%;
+    flex: 1 0 40%;
+    max-width: 40%;
+    padding: 1rem 5rem;
+    .social {
+      &__links {
+        padding-inline-start: 0;
+        list-style-type: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        .social__item {
+          flex: 1 0 25%;
+          text-align: center;
+          padding: 1rem 1rem;
+        }
+      }
+    }
   }
 
   &__copyright {

@@ -11,16 +11,16 @@
            width="400px"
            alt="a joystick, never heard of it?">
     </div>
-    <div class="contact_right">
-      <div class="footer__links">
-        <h2>Seguici sui social</h2>
-        <ul>
-          <li>icona 1</li>
-          <li>icona 2</li>
-          <li>icona 3</li>
-          <li>icona 4</li>
+    <div class="footer__right">
+      <div class="social">
+        <h3>Seguici sui social</h3>
+        <ul class="social__links">
+          <li class="social__item">1</li>
+          <li class="social__item">2</li>
+          <li class="social__item">3</li>
+          <li class="social__item">4</li>
         </ul>
-        <h2>Contattaci</h2>
+        <h3>Contattaci</h3>
         <a href="#">Scrivi, ti prego, ci manchi</a>
       </div>
     </div>

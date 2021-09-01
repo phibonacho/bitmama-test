@@ -1,9 +1,13 @@
 // Normalize Styles
 @import 'node_modules/normalize.css/normalize';
 
+// custom font
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
 @import "./variables";
 @import "./mixin";
 @import "./reset";
+@import "./typography";
 
 // Import Modules
 @import '../_modules/link/link';
@@ -24,23 +28,8 @@
   box-sizing: border-box;
 }
 
-.yeogurt-info {
-  text-align: center;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.version {
-  font-size: 14px;
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-}
-
-.logo {
-  margin-top: 15px;
+body {
+  background: #000;
 }
 
 // Styling on warning for users on IE7 or below

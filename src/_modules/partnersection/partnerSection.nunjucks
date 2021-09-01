@@ -6,16 +6,14 @@
   {% set _featuredSponsor = spec.featuredSponsor or '' %}
 
 
-  <div class="partnerSection">
-    <h2 class="partnerSection__title">{{ _title }}</h2>
-
-    <ul class="partnerSection__wrapper">
-      {% if _featuredSponsor %}
-        <li class="partner__item--featured">
-            {{ _featuredSponsor }}
-        </li>
-      {% endif %}
-
+  <div class="partner">
+    <h2 class="partner__title">{{ _title }}</h2>
+    {% if _featuredSponsor %}
+      <div class="partner__item--featured">
+        {{ _featuredSponsor }}
+      </div>
+    {% endif %}
+    <ul class="partner__list">
       {% for sponsor in _sponsors %}
         <li class="partner__item">
           {{ sponsor }}
