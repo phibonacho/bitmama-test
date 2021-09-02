@@ -1,6 +1,7 @@
 // teamsection styles
 .teamSection {
   padding: 3rem;
+  padding-bottom: 0;
   &__wrapper {
     margin: auto;
     display: flex;
@@ -26,5 +27,17 @@
       height: 100%;
       object-fit: cover;
     }
+
+    &__overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: green;
+      opacity: 0;
+    }
+    &__overlay:hover {
+      opacity: .3;
+    }
   }
+
 }

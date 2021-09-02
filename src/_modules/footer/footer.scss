@@ -33,6 +33,9 @@
           text-align: center;
           padding: 1rem 1rem;
         }
+        .social__item:first-child {
+          padding: 1rem 0;
+        }
       }
     }
   }

@@ -1,5 +1,9 @@
 // partnersection styles
 .partner {
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 100px;
+
   &__title {
     height: 80px;
     text-align: center;
@@ -10,7 +14,7 @@
   &__item--featured {
     width: 100%;
     text-align: center;
-    padding: 1rem 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   &__list {
