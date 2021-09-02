@@ -2,7 +2,6 @@
 
 {% set spec = spec or {} %}
 {% set _title = spec.title or '' %}
-{% set _newstexts = spec.newstexts or [] %}
 
 <div class="newsSection">
   <div class="newsSection__wrapper">
@@ -13,14 +12,12 @@
       <div class="glide">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
-            {% for newstext in _newstexts %}
             <li class="glide__slide">
               <div class="glide__slide-content">
-                <h4>{{ newstext }}</h4>
+                <h4>Prova</h4>
                 <a>Leggi</a>
               </div>
             </li>
-            {% endfor %}
           </ul>
         </div>
         <div class="glide__arrows" data-glide-el="controls">

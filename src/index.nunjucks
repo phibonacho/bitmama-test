@@ -21,7 +21,6 @@
 
     {{ newsSection.content({
       title: 'Ultime notizie'
-      newstexts: site.data.news
     }) }}
 
     {{ teamSection.content(site.data.team) }}

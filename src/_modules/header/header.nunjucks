@@ -7,11 +7,9 @@
   <div class="totem-header__wrapper">
     <div class="totem-header__wrapper__left">
       <div class="totem-header__left-dropdown">
-        <li>
           <a class="totem-header__link has-submenu" href="#">
             COMPANY
           </a>
-        </li>
         <div class="totem-header__left-dropdown-content">
           <ul class="totem-header__left-dropdown-content-list">
             <li class="totem-header__left-dropdown-item">
@@ -41,7 +39,6 @@
           <a class="totem-header__link lang-link">IT</a>
         </div>
         <button class="totem-header__button">NEGOZIO</button>
-        <img src="../../_images/—Pngtree—italy flag incircle frame free_6510823.png">
     </div>
   </div>
 </header>
