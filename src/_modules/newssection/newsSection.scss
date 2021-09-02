@@ -16,10 +16,22 @@
     margin: auto;
   }
   .glide__slide-content {
+    width: 200px;
     text-align: center;
+    border: 1px solid green;
+    margin: 0 auto;
+    padding: 3rem;
   }
   .glide__arrow {
     background: green;
     border: 1px solid black;
+  }
+  .glide__readAll {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .glide__readAll a {
+    text-decoration: none;
+    color: green;
   }
 }

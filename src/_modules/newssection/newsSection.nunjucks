@@ -14,8 +14,44 @@
           <ul class="glide__slides">
             <li class="glide__slide">
               <div class="glide__slide-content">
-                <h4>Prova</h4>
-                <a>Leggi</a>
+                <h4>Carousel text 1</h4>
+                <a>Leggi <i class="icon-search"></i>
+                </a>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="glide__slide-content">
+                <h4>Carousel text 2</h4>
+                <a>Leggi <i class="icon-search"></i>
+                </a>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="glide__slide-content">
+                <h4>Carousel text 3</h4>
+                <a>Leggi <i class="icon-search"></i>
+                </a>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="glide__slide-content">
+                <h4>Carousel text 4</h4>
+                <a>Leggi <i class="icon-search"></i>
+                </a>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="glide__slide-content">
+                <h4>Carousel text 5</h4>
+                <a>Leggi <i class="icon-search"></i>
+                </a>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="glide__slide-content">
+                <h4>Carousel text 6</h4>
+                <a>Leggi <i class="icon-search"></i>
+                </a>
               </div>
             </li>
           </ul>
@@ -25,6 +61,11 @@
           <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
         </div>
       </div>
+    </div>
+    <div>
+      <h4 class="glide__readAll">
+      <a href="#">VEDI TUTTE</a>
+      </h4>
     </div>
   </div>
 </div>

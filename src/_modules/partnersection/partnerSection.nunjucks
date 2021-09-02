@@ -20,5 +20,10 @@
         </li>
       {% endfor %}
     </ul>
+    <div>
+      <h4 class="partner__becomePartner">
+      <a href="#">DIVENTA PARTNER</a>
+      </h4>
+    </div>
   </div>
 {% endmacro %}
