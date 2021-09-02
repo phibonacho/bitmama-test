@@ -13,7 +13,7 @@
   <div class="teamSection__wrapper">
     {% for url in _urls %}
       <div class="teamSection__item">
-        <img src="{{ url }}" alt="an image, you fuck.">
+        <img src="{{ url }}" alt="team image">
       </div>
     {% endfor %}
   </div>

@@ -3,9 +3,10 @@
 .totem-header { // block
   position: fixed;
   width: 100%;
-  background: #ABC2E1;
+  background: rgb(118,175,39);
+  background: linear-gradient(177deg, rgba(118,175,39,1) 0%, rgba(72,149,44,1) 100%); 
+
   &__wrapper {
-    border: 1px solid red;
     width: 100%;
     height: 60px;
     display: flex;
@@ -14,8 +15,7 @@
     justify-content: space-between;
 
     &__left {
-      flex: 1 0 40%;
-      border: solid 1px blue;
+      flex: 1 0 30%;
       display: flex;
       flex-flow: row wrap;
       text-align: center;
@@ -23,36 +23,63 @@
     }
 
     &__center {
-      flex: 1 0 20%;
-      border: solid 1px orange;
+      flex: 1 0 30%;
       display: flex;
       flex-flow: row wrap;
     }
 
     &__right {
-      flex: 1 0 40%;
-      border: solid 1px green;
+      flex: 1 0 30%;
       display: flex;
       flex-flow: row wrap;
       text-align: center;
+      align-items: center;
       justify-content: flex-start;
     }
-
+  
   }
 
-  &__dropdown {
+  &__logo-image {
     align-self: center;
+    margin: auto;
     padding: 0 1.5rem;
   }
-
   &__link {
     align-self: center;
     padding: 0 1.5rem;
-
+    text-decoration: none;
   }
-
   &__button {
     align-self: center;
-    padding: 0 1.5rem;
+    padding: 5px 1px;
+    color:#106d32;
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+  }
+
+  &__left-dropdown {
+    position: relative;
+    align-self: center;
+  }
+  &__left-dropdown-content {
+    position: absolute;
+    top: 125%;
+    left: -50%;
+    width:200px;
+  }
+  &__left-dropdown-content-list {
+    display: none;
+  }
+  &__link.has-submenu:hover + .totem-header__left-dropdown-content .totem-header__left-dropdown-content-list { 
+    display: block;
+    list-style: none;
+    background: black; 
+    padding: 0;
+  }
+  &__left-dropdown-item {
+    padding: 20px 30px;
+    border-bottom: 1px solid green;
   }
 }
+

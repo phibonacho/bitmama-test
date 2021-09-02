@@ -6,3 +6,4 @@ export default class TeamSection {
     console.log('%s module', this.name.toLowerCase());
   }
 }
+

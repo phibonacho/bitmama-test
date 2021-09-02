@@ -10,7 +10,9 @@
 
 {% block content %}
   <div class="main-container">
-    {{ header.content() }}
+    {{ header.content({
+      logo: "./_images/index.png"
+    }) }}
 
     {{ heroBanner.content({
       videoUrl: "https://replytotem.com/wp-content/uploads/2021/07/Udoo-1.mp4"
@@ -19,6 +21,7 @@
 
     {{ newsSection.content({
       title: 'Ultime notizie'
+      newstexts: site.data.news
     }) }}
 
     {{ teamSection.content(site.data.team) }}
@@ -36,3 +39,5 @@
     {{ footer.content() }}
   </div>
 {% endblock %}
+
+

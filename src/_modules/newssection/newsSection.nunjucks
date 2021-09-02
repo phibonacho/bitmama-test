@@ -2,16 +2,36 @@
 
 {% set spec = spec or {} %}
 {% set _title = spec.title or '' %}
+{% set _newstexts = spec.newstexts or [] %}
 
 <div class="newsSection">
   <div class="newsSection__wrapper">
     <div class="newsSection__title">
       <h2>{{ _title }}</h2>
     </div>
-
-    <div class="newsSection__carousel__wrapper">
+    <div class="newsSection__carouselContainer">
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            {% for newstext in _newstexts %}
+            <li class="glide__slide">
+              <div class="glide__slide-content">
+                <h4>{{ newstext }}</h4>
+                <a>Leggi</a>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+        </div>
+      </div>
     </div>
   </div>
-
 </div>
+
 {% endmacro %}
+
+

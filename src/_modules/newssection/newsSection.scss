@@ -10,8 +10,12 @@
     padding: .5rem 0;
   }
 
-  &__carousel__wrapper {
-    border: solid 1px red;
-    height: 517px;
+  &__carouselContainer {
+    height: 300px;
+    width: 1200px;
+    margin: auto;
+  }
+  .glide__slide-content {
+    text-align: center;
   }
 }
