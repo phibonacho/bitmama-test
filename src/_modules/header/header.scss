@@ -5,6 +5,7 @@
   width: 100%;
   background: rgb(118,175,39);
   background: linear-gradient(177deg, rgba(118,175,39,1) 0%, rgba(72,149,44,1) 100%); 
+  z-index: 100;
 
   &__wrapper {
     width: 100%;
@@ -51,7 +52,7 @@
   }
   &__button {
     align-self: center;
-    padding: 5px 1px;
+    padding: 5px 20px;
     color:#106d32;
     background-color: white;
     border-radius: 50px;

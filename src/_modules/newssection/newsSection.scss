@@ -11,11 +11,15 @@
   }
 
   &__carouselContainer {
-    height: 300px;
+    height: 200px;
     width: 1200px;
     margin: auto;
   }
   .glide__slide-content {
     text-align: center;
+  }
+  .glide__arrow {
+    background: green;
+    border: 1px solid black;
   }
 }
