@@ -11,7 +11,7 @@
 {% block content %}
   <div class="main-container">
     {{ header.content({
-      logo: "./_images/index.png"
+      logo: "./images/index.png"
     }) }}
 
     {{ heroBanner.content({
