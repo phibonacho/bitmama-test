@@ -14,9 +14,9 @@
         </svg>
       </div>
       <div class="totem-header__left-dropdown">
-          <li class="totem-header__link has-submenu" href="#">
+          <a class="totem-header__link has-submenu" href="#">
             <i class="icon-arrow-down2"></i> COMPANY
-          </li>
+          </a>
         <div class="totem-header__left-dropdown-content">
           <ul class="totem-header__left-dropdown-content-list">
             <li class="totem-header__left-dropdown-item">
