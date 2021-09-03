@@ -14,7 +14,7 @@
     {% for url in _urls %}
       <div class="teamSection__item">
         <img src="{{ url }}" alt="team image">
-        <div class="teamSection__item__overlay"></div>
+        <div class="teamSection__item__overlay"><i class="icon-arrow-right2"></i></div>
       </div>
     {% endfor %}
   </div>

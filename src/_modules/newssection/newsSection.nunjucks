@@ -17,7 +17,7 @@
            <li class="glide__slide">
               <div class="glide__slide-content">
                 <h4>{{ news }}</h4>
-                <a>Leggi <i class="icon-search"></i>
+                <a href="#">Leggi <i class="icon-search"></i>
                 </a>
               </div>
             </li>
@@ -25,14 +25,14 @@
           </ul>
         </div>
         <div class="glide__arrows" data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">PREV</button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">NEXT</button>
         </div>
       </div>
     </div>
     <div>
       <h4 class="glide__readAll">
-      <a href="#">VEDI TUTTE</a>
+      <a href="#"><i class="icon-search"></i> VEDI TUTTE</a>
       </h4>
     </div>
   </div>

@@ -39,7 +39,7 @@
         <div class="totem-header__lang-dropdown j-lang">
           <a class="totem-header__link lang-link"><i class="icon-arrow-down2"></i> IT </a> 
         </div>
-        <button class="totem-header__button">NEGOZIO <i class="icon-arrow-right2"></i> </button>
+        <button class="totem-header__button">NEGOZIO <i class="icon-arrow-2"></i> </button>
     </div>
   </div>
 </header>

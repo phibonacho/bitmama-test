@@ -27,16 +27,17 @@
 
     & a {
       text-decoration: none;
+      color: #70d100;
     }
 
     & a i {
-      font-size: 10px;
+      font-size: 15px;
       font-weight: bold;
       margin-left: 5px;
     }
   }
   .glide__arrow {
-    background: green;
+    background: #70d100;
     border: 1px solid black;
   }
   .glide__readAll {
@@ -45,6 +46,13 @@
   }
   .glide__readAll a {
     text-decoration: none;
-    color: green;
+    color: #70d100;
+  }
+  .glide__readAll a i {
+    font-size: 12px;
+    margin-right: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #70d100;
   }
 }

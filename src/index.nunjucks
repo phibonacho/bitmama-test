@@ -25,12 +25,12 @@
 
     {{ partnerSection.content({
       title: 'I nostri partner',
-      featuredSponsor: 'reply',
+      featuredSponsor: "images/Reply-Logo.svg",
       sponsors: [
-        'kaspersky',
-        'udoo',
-        'blufast',
-        'sols-europe'
+        "images/kasp.svg",
+        "images/udoo.png",
+        "images/blue.png",
+        "images/sols.png"
       ]
     }) }}
     {{ footer.content() }}
