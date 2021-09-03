@@ -1,8 +1,12 @@
 // partnersection styles
+.partner-background {
+  background: #292929;
+}
 .partner {
   max-width: 1200px;
   margin: auto;
-  margin-bottom: 100px;
+  padding-bottom: 50px;
+  padding-top: 10px;
 
   &__title {
     height: 80px;

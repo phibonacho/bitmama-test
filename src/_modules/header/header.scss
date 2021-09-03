@@ -89,6 +89,9 @@
   &__left-dropdown-content-list {
     display: none;
   }
+  &__link.has-submenu {
+    display: inline-block;
+  }
   &__link.has-submenu:hover + .totem-header__left-dropdown-content .totem-header__left-dropdown-content-list { 
     display: block;
     list-style: none;

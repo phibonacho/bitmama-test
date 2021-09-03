@@ -5,7 +5,7 @@
   {% set _sponsors = spec.sponsors or [] %}
   {% set _featuredSponsor = spec.featuredSponsor or '' %}
 
-
+<div class="partner-background">
   <div class="partner">
     <h2 class="partner__title">{{ _title }}</h2>
     {% if _featuredSponsor %}
@@ -26,4 +26,5 @@
       </h4>
     </div>
   </div>
+</div>
 {% endmacro %}
