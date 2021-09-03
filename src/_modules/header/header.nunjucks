@@ -3,7 +3,7 @@
 {% set spec = spec or {} %}
 {% set _logo = spec.logo or '' %}
 
-<header class="totem-header">
+<header class="totem-header blu">
   <div class="totem-header__wrapper">
     <div class="totem-header__wrapper__left">
       <div class="totem-header__burger-menu">
