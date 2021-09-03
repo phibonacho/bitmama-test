@@ -15,14 +15,14 @@
     {% endif %}
     <ul class="partner__list">
       {% for sponsor in _sponsors %}
-        <li class="partner__item">
+        <li class="partner__list__item">
           <img src="{{ sponsor }}">
         </li>
       {% endfor %}
     </ul>
     <div>
       <h4 class="partner__becomePartner">
-      <a href="#">DIVENTA PARTNER</a>
+      <a href="#"><i class="icon-heart"></i>DIVENTA PARTNER</a>
       </h4>
     </div>
   </div>

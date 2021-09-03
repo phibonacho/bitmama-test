@@ -15,13 +15,13 @@
       <div class="social">
         <h3>Seguici sui social</h3>
         <ul class="social__links">
-          <li class="social__item">1</li>
-          <li class="social__item">2</li>
-          <li class="social__item">3</li>
-          <li class="social__item">4</li>
+          <li class="social__item"><i class="icon-facebook2"></i></li>
+          <li class="social__item"><i class="icon-instagram"></i></li>
+          <li class="social__item"><i class="icon-twitter"></i></li>
+          <li class="social__item"><i class="icon-youtube"></i></li>
         </ul>
         <h3>Contattaci</h3>
-        <a href="#">SCRIVICI</a>
+        <a class="social__follow" href="#"><i class="icon-arrow-right2"></i> SCRIVICI</a>
       </div>
     </div>
   </div>

@@ -24,9 +24,10 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    .partner__item {
+    &__item {
       flex: 1 0 25%;
       text-align: center;
+      margin:auto;
       padding: 1rem 2.5rem;
     }
   }
@@ -36,8 +37,12 @@
   }
   .partner__becomePartner a {
     text-decoration: none;
-    color: green;
+    color: #70d100;
+    & i {
+      font-size: 13px;
+      margin-right: 7px;
+      color: #70d100;
+    }
   }
-
 
 }

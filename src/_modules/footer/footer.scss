@@ -30,11 +30,24 @@
         justify-content: space-between;
         .social__item {
           flex: 1 0 25%;
-          text-align: center;
-          padding: 1rem 1rem;
+          padding: 1rem 0rem;
+          & i {
+            font-size: 25px;
+            font-weight: bold;
+            color: #70d100;
+          }
         }
         .social__item:first-child {
           padding: 1rem 0;
+        }
+      }
+      &__follow {
+        font-size: 25px;
+        text-decoration: none;
+        color: #70d100;
+        & i {
+          color: #70d100;
+          font-size: 20px;
         }
       }
     }
