@@ -59,3 +59,20 @@
     background: #4f4f4f;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .footer__left {
+    text-align: center;
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+  .footer__right {
+    text-align: center;
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+  .footer__copyright {
+    text-align: center;
+    padding: 1rem;
+  }
+}

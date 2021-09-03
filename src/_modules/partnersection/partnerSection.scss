@@ -50,3 +50,21 @@
   }
 
 }
+
+@media screen and (max-width: 1172px) {
+  .partner__list__item {
+    flex: 1 0 50%;
+      text-align: center;
+      margin:auto;
+      padding: 1rem 2.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .partner__list__item {
+    flex: 1 0 100%;
+      text-align: center;
+      margin:auto;
+      padding: 1rem 2.5rem;
+  }
+}
