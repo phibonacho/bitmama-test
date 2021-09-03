@@ -7,6 +7,11 @@
   background: linear-gradient(177deg, rgba(118,175,39,1) 0%, rgba(72,149,44,1) 100%); 
   z-index: 100;
 
+  &__burger-menu {
+      margin: auto;
+      display: none;
+  }
+
   &__wrapper {
     width: 100%;
     height: 60px;
@@ -37,7 +42,6 @@
       align-items: center;
       justify-content: flex-start;
     }
-  
   }
 
   &__logo-image {
@@ -56,6 +60,7 @@
     text-decoration: none;
   }
   &__button {
+    cursor: pointer;
     align-self: center;
     padding: 5px 15px;
     color:#106d32;
@@ -104,5 +109,11 @@
   }
   &__left-dropdown-item a{
     text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 1150px){
+  .totem-header__burger-menu {
+    display: block;
   }
 }
