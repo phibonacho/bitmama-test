@@ -2,6 +2,7 @@
 
 {% set spec = spec or {} %}
 {% set _title = spec.title or '' %}
+{% set _newstext = spec.newstext or [] %}
 
 <div class="newsSection">
   <div class="newsSection__wrapper">
@@ -12,48 +13,15 @@
       <div class="glide">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
-            <li class="glide__slide">
+          {% for news in _newstext %}
+           <li class="glide__slide">
               <div class="glide__slide-content">
-                <h4>Carousel text 1</h4>
+                <h4>{{ news }}</h4>
                 <a>Leggi <i class="icon-search"></i>
                 </a>
               </div>
             </li>
-            <li class="glide__slide">
-              <div class="glide__slide-content">
-                <h4>Carousel text 2</h4>
-                <a>Leggi <i class="icon-search"></i>
-                </a>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="glide__slide-content">
-                <h4>Carousel text 3</h4>
-                <a>Leggi <i class="icon-search"></i>
-                </a>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="glide__slide-content">
-                <h4>Carousel text 4</h4>
-                <a>Leggi <i class="icon-search"></i>
-                </a>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="glide__slide-content">
-                <h4>Carousel text 5</h4>
-                <a>Leggi <i class="icon-search"></i>
-                </a>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="glide__slide-content">
-                <h4>Carousel text 6</h4>
-                <a>Leggi <i class="icon-search"></i>
-                </a>
-              </div>
-            </li>
+          {% endfor %}
           </ul>
         </div>
         <div class="glide__arrows" data-glide-el="controls">

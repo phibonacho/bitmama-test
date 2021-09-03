@@ -11,7 +11,7 @@
 {% block content %}
   <div class="main-container">
     {{ header.content({
-      logo: "./images/index.png"
+      logo: "./images/logo.svg"
     }) }}
 
     {{ heroBanner.content({
@@ -19,9 +19,7 @@
     })
     }}
 
-    {{ newsSection.content({
-      title: 'Ultime notizie'
-    }) }}
+    {{ newsSection.content(site.data.news) }}
 
     {{ teamSection.content(site.data.team) }}
 

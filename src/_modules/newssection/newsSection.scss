@@ -16,11 +16,24 @@
     margin: auto;
   }
   .glide__slide-content {
+    background-image: url('https://replytotem.com/wp-content/themes/totem/build/images/shadows-lights/founder-back.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 200px;
     text-align: center;
-    border: 1px solid green;
     margin: 0 auto;
     padding: 3rem;
+
+    & a {
+      text-decoration: none;
+    }
+
+    & a i {
+      font-size: 10px;
+      font-weight: bold;
+      margin-left: 5px;
+    }
   }
   .glide__arrow {
     background: green;
@@ -28,7 +41,7 @@
   }
   .glide__readAll {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
   .glide__readAll a {
     text-decoration: none;

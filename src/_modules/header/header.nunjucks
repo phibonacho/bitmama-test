@@ -7,8 +7,9 @@
   <div class="totem-header__wrapper">
     <div class="totem-header__wrapper__left">
       <div class="totem-header__left-dropdown">
+          
           <a class="totem-header__link has-submenu" href="#">
-            COMPANY
+            <i class="icon-arrow-down2"></i> COMPANY
           </a>
         <div class="totem-header__left-dropdown-content">
           <ul class="totem-header__left-dropdown-content-list">
@@ -36,9 +37,9 @@
     </div>
     <div class="totem-header__wrapper__right">
         <div class="totem-header__lang-dropdown j-lang">
-          <a class="totem-header__link lang-link">IT</a>
+          <a class="totem-header__link lang-link"><i class="icon-arrow-down2"></i> IT </a> 
         </div>
-        <button class="totem-header__button">NEGOZIO</button>
+        <button class="totem-header__button">NEGOZIO <i class="icon-arrow-right2"></i> </button>
     </div>
   </div>
 </header>
