@@ -1,2 +1,77 @@
+//–––––––––––––––––––––
+//  BREAKPOINTS
+//–––––––––––––––––––––
 
-$reply-green: #78b027;
+$breakpoints: (
+  xxs_minus: 374px,
+  xxs: 375px,
+  xxs_plus: 376px,
+  xs_minus: 479px,
+  xs: 480px,
+  xs_plus: 481px,
+  s_minus: 767px,
+  s: 768px,
+  s_plus: 769px,
+  m_minus: 1023px,
+  m: 1024px,
+  m_plus: 1025px,
+  l_minus: 1279px,
+  l: 1280px,
+  l_plus: 1281px,
+  xl_minus: 1439px,
+  xl: 1440px,
+  xl_plus: 1441px,
+  xxl_minus: 1599px,
+  xxl: 1600px,
+  xxl_plus: 1601px
+);
+
+//–––––––––––––––––––––
+//  TRANSITIONS
+//–––––––––––––––––––––
+
+$curve: cubic-bezier(0.09, 0.72, 0.76, 1.01);
+$curve-2: cubic-bezier(0.9, 0, 0.1, 1);
+
+$arrowTransition: 0.4s $curve-2 0.3s;
+$arrowTransitionBack: 0.4s $curve-2 0s;
+
+$transition: all 0.3s $curve;
+
+//–––––––––––––––––––––
+//  SPACERS
+//–––––––––––––––––––––
+
+$spacers-xxs: 0.25rem; // 4px
+$spacers-xs: 0.5rem; // 8px
+$spacers-s: 1rem; // 16px
+$spacers-m: 1.5rem; // 24px
+$spacers-l: 2rem; // 32px
+$spacers-xl: 2.5rem; // 40px
+$spacers-xxl: 3.5rem; // 56px
+$spacers-xxxl: 4.5rem; // 72px
+
+//–––––––––––––––––––––
+//  COLORS
+//–––––––––––––––––––––
+
+$white: #FFFFFF;
+$black: #000000;
+$primary: #70D100;
+$grey-1: #848484;
+$grey-2: #292929;
+$red: #FF0000;
+$green-dark: #106D32;
+
+//–––––––––––––––––––––
+//  GRADIENTS
+//–––––––––––––––––––––
+
+$gradient: linear-gradient(
+  90deg,
+  rgba(0, 0, 0, 0) 0%,
+  rgba(112, 209, 0, 1) 30%,
+  rgba(219, 255, 129, 1) 50%,
+  rgba(112, 209, 0, 1) 70%,
+  rgba(0, 0, 0, 0) 100%
+);
