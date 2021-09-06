@@ -5,8 +5,13 @@
   padding: 0 3rem;
 
   .teamSection__title {
+    @include headline-1;
     text-align: center;
     padding: .5rem 0;
+
+    @include respond-above(m) {
+      @include headline-3;
+    }
   }
 
   .teamSection__wrapper {
@@ -15,26 +20,24 @@
     flex-flow: row wrap;
     max-width: 90rem; // todo: fix on breakpoint
     justify-content: space-around;
+    max-width: 1400px;
 
     .teamSection__item {
-      margin-bottom: 50px;
+      flex: 1 0 100%;
+      margin-bottom: 3rem;
       background: teal;
-      max-width: 430px;
-      height: 430px;
+      max-width: 100%;
       cursor: pointer;
       position: relative;
 
-      // mobile
-      flex: 1 0 100%;
-
-      // tablet
-      @media screen and (min-width: 768px) {
+      @include respond-above(m) {
         flex: 1 0 50%;
+        max-width: 45%;
       }
 
-      // desktop
-      @media screen and (min-width: 1440px) {
+      @include respond-above(l) {
         flex: 1 0 33%;
+        max-width: 30%;
       }
 
       img {
