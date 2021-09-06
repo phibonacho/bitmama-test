@@ -1,7 +1,7 @@
 // herobanner styles
 
 .heroBanner {
-  &__wrapper {
+  .heroBanner__wrapper {
     width: 100%;
     height: calc(100vh - 160px);
     background: orange;
@@ -11,5 +11,4 @@
       object-fit: cover;
     }
   }
-
 }
