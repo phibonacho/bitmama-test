@@ -5,11 +5,11 @@
   {% set _sponsors = spec.sponsors or [] %}
   {% set _featuredSponsor = spec.featuredSponsor or '' %}
 
-<div class="partner-background">
-  <div class="partner">
+<div class="partnerBackground">
+  <section class="partner">
     <h2 class="partner__title">{{ _title }}</h2>
     {% if _featuredSponsor %}
-      <div class="partner__item--featured">
+      <div class="partner__itemFeatured">
         <img src="{{ _featuredSponsor }}">
       </div>
     {% endif %}
@@ -20,11 +20,12 @@
         </li>
       {% endfor %}
     </ul>
-    <div>
-      <h4 class="partner__becomePartner">
+    <div class="partner__becomePartner">
+      <h4 class="partner__becomePartnerTitle">
       <a href="#"><i class="icon-heart"></i>DIVENTA PARTNER</a>
       </h4>
     </div>
-  </div>
+  </section>
 </div>
+
 {% endmacro %}

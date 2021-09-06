@@ -1,14 +1,15 @@
 // partnersection styles
-.partner-background {
+.partnerBackground {
   background: #292929;
 }
+
 .partner {
   max-width: 1200px;
   margin: auto;
   padding-bottom: 50px;
   padding-top: 10px;
 
-  &__title {
+  .partner__title {
     height: 80px;
     text-align: center;
     padding: .5rem 0;
@@ -16,40 +17,43 @@
     color: #70d100;
   }
 
-  &__item--featured {
+  .partner__itemFeatured {
     width: 100%;
     text-align: center;
     padding-bottom: 2.5rem;
   }
 
-  &__list {
+  .partner__list {
     padding-block-start: 0;
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    &__item {
+
+    .partner__list__item {
       flex: 1 0 25%;
       text-align: center;
       margin:auto;
       padding: 1rem 2.5rem;
     }
   }
-  .partner__becomePartner{
+
+  .partner__becomePartnerTitle{
     text-align: center;
     margin-top: 3rem;
   }
-  .partner__becomePartner a {
+  .partner__becomePartnerTitle a {
     text-decoration: none;
     color: #70d100;
-    & i {
+
+    a i {
       font-size: 13px;
       margin-right: 7px;
       color: #70d100;
     }
   }
-
 }
+
 
 @media screen and (max-width: 1172px) {
   .partner__list__item {
