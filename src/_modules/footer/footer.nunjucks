@@ -3,22 +3,30 @@
 {% set spec = spec or {} %}
 {% set _class = spec.class or '' %}
 
-<div class="footer">
+<footer class="footer">
   <div class="footer__wrapper">
     <div class="footer__left">
       <img src="https://replytotem.com/wp-content/themes/totem/build/images/general/joystick.png"
            height="400px"
            width="400px"
-           alt="a joystick, never heard of it?">
+           alt="Controller">
     </div>
     <div class="footer__right">
-      <div class="social">
+      <div class="footer__right__social">
         <h3>Seguici sui social</h3>
-        <ul class="social__links">
-          <li class="social__item"><i class="icon-facebook2"></i></li>
-          <li class="social__item"><i class="icon-instagram"></i></li>
-          <li class="social__item"><i class="icon-twitter"></i></li>
-          <li class="social__item"><i class="icon-youtube"></i></li>
+        <ul class="footer__right__social__links">
+          <li class="social__item">
+            <a href="#"><i class="icon-facebook2"></i></a>
+          </li>
+          <li class="social__item">
+            <a href="#"><i class="icon-instagram"></i></a>
+          </li>
+          <li class="social__item">
+            <a href="#"><i class="icon-twitter"></i></a>
+          </li>
+          <li class="social__item">
+            <a href="#"><i class="icon-youtube"></i></a>
+          </li>
         </ul>
         <h3>Contattaci</h3>
         <a class="social__follow" href="#"><i class="icon-arrow-right2"></i> SCRIVICI</a>
@@ -28,5 +36,5 @@
   <div class="footer__copyright">
     &copy; 2020 Totem All rights reserved.
   </div>
-</div>
+</footer>
 {% endmacro %}
