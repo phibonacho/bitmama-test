@@ -7,12 +7,15 @@
 {% import "_modules/teamsection/teamSection.nunjucks" as teamSection %}
 {% import "_modules/partnersection/partnerSection.nunjucks" as partnerSection %}
 {% import "_modules/footer/footer.nunjucks" as footer %}
+{% import "_modules/mobilemenu/mobileMenu.nunjucks" as mobileMenu %}
 
 {% block content %}
   <div class="main-container">
     {{ header.content({
       logo: "./images/logo.svg"
     }) }}
+
+    {{ mobileMenu.content() }}
 
     {{ heroBanner.content({
       videoUrl: "https://replytotem.com/wp-content/uploads/2021/07/Udoo-1.mp4"
