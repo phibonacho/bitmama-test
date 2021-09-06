@@ -45,14 +45,14 @@
     </div>
     <div class="totemHeader__wrapper__right">
         <div class="totemHeader__langDropdown j-lang">
-          <a href="#" class="totemHeader__link lang-link"><i class="icon-arrow-down2"></i> IT </a> 
+          <a href="#" class="totemHeader__link lang-link"><i class="icon-arrow-down2"></i> IT <i class="icon-flag"></i></a> 
           <div class="totemHeader__rightDropdownContent">
           <ul class="totemHeader__rightDropdownContentList">
             <li class="totemHeader__rightDropdownItem">
-              <a href="#">EN</a>
+              <a href="#">EN <i class="icon-flag"></i></a>
             </li>
             <li class="totemHeader__rightDropdownItem">
-              <a href="#">ES</a>
+              <a href="#">ES <i class="icon-flag"></i></a>
             </li>
           </ul>
         </div>

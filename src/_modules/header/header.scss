@@ -85,7 +85,6 @@
   .totemHeader__rightDropdownContent {
     position: absolute;
     top: 125%;
-    left: -12%;
     width: 100px;
   }
   .totemHeader__link {
@@ -114,6 +113,7 @@
   }
   .icon-arrow-down2 {
     font-size: 10px;
+    margin-right: 5px;
     font-weight: bold;
   }
   .icon-arrow-right2 {
@@ -124,6 +124,11 @@
     background-color: green;
     padding: 3px;
     border-radius: 50px;
+  }
+  .icon-flag {
+    font-size: 10px;
+    margin-left: 5px;
+    font-weight: bold;
   }
 }
 
