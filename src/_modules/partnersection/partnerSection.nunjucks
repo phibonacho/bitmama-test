@@ -10,13 +10,13 @@
     <h2 class="partner__title">{{ _title }}</h2>
     {% if _featuredSponsor %}
       <div class="partner__itemFeatured">
-        <img src="{{ _featuredSponsor }}">
+        <img src="{{ _featuredSponsor }}" alt="featured sponsor image">
       </div>
     {% endif %}
     <ul class="partner__list">
       {% for sponsor in _sponsors %}
         <li class="partner__list__item">
-          <img src="{{ sponsor }}">
+          <img src="{{ sponsor }}" alt="sponsor image">
         </li>
       {% endfor %}
     </ul>

@@ -1,3 +1,7 @@
+@import "./src/_styles/variables";
+@import "./src/_styles/mixin";
+@import "./src/_styles/typography";
+
 // partnersection styles
 .partnerBackground {
   background: #292929;
@@ -10,17 +14,24 @@
   padding-top: 10px;
 
   .partner__title {
-    height: 80px;
     text-align: center;
     padding: .5rem 0;
     flex: 3 0 100%;
-    color: #70d100;
+    color: $primary;
+
+    @include respond-above(s) {
+      font-size: 2rem;
+    }
   }
 
   .partner__itemFeatured {
     width: 100%;
     text-align: center;
     padding-bottom: 2.5rem;
+
+    @include respond-above(s) {
+      padding: 2.5rem 0;
+    }
   }
 
   .partner__list {
@@ -31,10 +42,26 @@
     justify-content: space-between;
 
     .partner__list__item {
-      flex: 1 0 25%;
+      flex: 1 0 100%;
       text-align: center;
       margin:auto;
       padding: 1rem 2.5rem;
+
+      img {
+        width: 34%;
+
+        @include respond-above(s) {
+          width: auto;
+        }
+      }
+
+      @include respond-above(s) {
+        flex: 1 0 25%;
+        text-align: center;
+        margin:auto;
+        padding: 1rem 2.5rem;
+      }
+
     }
   }
 
@@ -44,31 +71,16 @@
   }
   .partner__becomePartnerTitle a {
     text-decoration: none;
-    color: #70d100;
+    color: $primary;
 
     i {
       font-size: 13px;
       margin-right: 7px;
-      color: #70d100;
+      color: $primary;
+
+      @include respond-above(s) {
+        font-size: 1.125rem;
+      }
     }
-  }
-}
-
-
-@media screen and (max-width: 1172px) {
-  .partner__list__item {
-    flex: 1 0 50%;
-      text-align: center;
-      margin:auto;
-      padding: 1rem 2.5rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .partner__list__item {
-    flex: 1 0 100%;
-      text-align: center;
-      margin:auto;
-      padding: 1rem 2.5rem;
   }
 }
