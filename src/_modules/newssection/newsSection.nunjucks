@@ -18,8 +18,7 @@
            <li class="glide__slide">
               <div class="glide__slide-content">
                 <h4>{{ news }}</h4>
-                <a href="#"><i class="icon-search"></i> Leggi 
-                </a>
+                <a href="#"><i class="icon-search"></i> Leggi</a>
               </div>
             </li>
           {% endfor %}

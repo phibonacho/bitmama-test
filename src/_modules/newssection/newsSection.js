@@ -10,13 +10,13 @@ export default class NewsSection {
     new Glide('.glide', {
       type: 'carousel',
       perView: 3,
-      gap: -200,
       breakpoints: {
-        1280: {
+        1024: {
           perView: 2
         },
-        900: {
-          perView: 1
+        767: {
+          perView: 1,
+          gap: 20
         }
       }
     }).mount()
