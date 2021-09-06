@@ -26,8 +26,8 @@
           </ul>
         </div>
         <div class="glide__arrows" data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">PREV</button>
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">NEXT</button>
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="icon-arrow-left2"></i></button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="icon-arrow-right2"></i></button>
         </div>
       </div>
     </div>

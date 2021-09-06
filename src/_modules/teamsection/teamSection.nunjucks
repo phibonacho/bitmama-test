@@ -5,18 +5,19 @@
 {% set _title = spec.title or '' %}
 {% set _urls = spec.urls or [] %}
 
-<div class="teamSection">
+<section class="teamSection">
   <div class="teamSection__title">
     <h2>{{ _title }}</h2>
   </div>
-
   <div class="teamSection__wrapper">
     {% for url in _urls %}
       <div class="teamSection__item">
         <img src="{{ url }}" alt="team image">
-        <div class="teamSection__item__overlay"><i class="icon-arrow-right2"></i></div>
+        <div class="teamSection__item__overlay"></div>
+        <i class="icon-arrow-right2"></i>
       </div>
     {% endfor %}
   </div>
-</div>
+</section>
+
 {% endmacro %}

@@ -2,60 +2,69 @@
 .teamSection {
   padding: 0 3rem 3rem 3rem;
   padding-bottom: 0;
-  &__wrapper {
+
+  .teamSection__title {
+    text-align: center;
+    padding: .5rem 0;
+  }
+
+  .teamSection__wrapper {
     margin: auto;
     display: flex;
     flex-flow: row wrap;
     max-width: 90rem;
     justify-content: space-around;
-  }
 
-  &__title {
-    text-align: center;
-    padding: .5rem 0;
-  }
+    .teamSection__item {
+      cursor: pointer;
+      position: relative;
+      flex: 1 0 calc(33.33% - 50px);
+      max-width: 430px;
+      height: 430px;
+      margin-bottom: 50px;
+      background: teal;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      .teamSection__item__overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left:0;
+        top: 0;
+        background: #78b027;
+        opacity: 0;
+      }
 
-  &__item {
-    cursor: pointer;
-    position: relative;
-    flex: 1 0 calc(33.33% - 50px);
-    max-width: 430px;
-    height: 430px;
-    margin-bottom: 50px;
-    background: teal;
+      .teamSection__item__overlay:hover {
+        opacity: .5;
+      }
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+      .teamSection__item__overlay:hover + .icon-arrow-right2 {
+        display: block;
+      }
 
-    &__overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left:0;
-      top: 0;
-      background: green;
-      opacity: 0;
-    }
-    &__overlay:hover {
-      opacity: .5;
-    }
-    .icon-arrow-right2 {
-      font-weight: bold;
-      font-size: 20px;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 80%;
-      padding: 5px;
-      border-radius: 50%;
-      border: 3px solid white;
-      color: white;
+      .icon-arrow-right2 {
+        display: none;
+        font-weight: bold;
+        font-size: 20px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 80%;
+        padding: 5px;
+        border-radius: 50%;
+        border: 3px solid white;
+        color: white;
+      }
     }
   }
 }
+
 
 @media screen and (max-width: 1560px) {
   .teamSection__item {
