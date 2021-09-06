@@ -4,11 +4,12 @@
 {% set _title = spec.title or '' %}
 {% set _newstext = spec.newstext or [] %}
 
-<div class="newsSection">
+<section class="newsSection">
   <div class="newsSection__wrapper">
     <div class="newsSection__title">
       <h2>{{ _title }}</h2>
     </div>
+    <!-- GLIDE SLIDER -->
     <div class="newsSection__carouselContainer">
       <div class="glide">
         <div class="glide__track" data-glide-el="track">
@@ -30,13 +31,14 @@
         </div>
       </div>
     </div>
+    <!-- GLIDE SLIDER END -->
     <div>
       <h4 class="glide__readAll">
       <a href="#"><i class="icon-search"></i> VEDI TUTTE</a>
       </h4>
     </div>
   </div>
-</div>
+</section>
 
 {% endmacro %}
 

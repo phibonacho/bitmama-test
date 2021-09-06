@@ -1,20 +1,22 @@
 // newssection styles
 .newsSection {
   padding: 3rem;
-  &__wrapper {
+
+  .newsSection__wrapper {
     width: 100%;
   }
 
-  &__title {
+  .newsSection__title {
     text-align: center;
     padding: .5rem 0;
   }
 
-  &__carouselContainer {
+  .newsSection__carouselContainer {
     height: 200px;
     max-width: 1200px;
     margin: auto;
   }
+
   .glide__slide-content {
     background-image: url('https://replytotem.com/wp-content/themes/totem/build/images/shadows-lights/founder-back.svg');
     background-position: center;
@@ -25,17 +27,18 @@
     margin: 0 auto;
     padding: 3rem;
 
-    & a {
+    .glide__slide-content a {
       text-decoration: none;
       color: #70d100;
     }
 
-    & a i {
+    .glide__slide-content a i {
       font-size: 15px;
       font-weight: bold;
       margin-right: 5px;
     }
   }
+  
   .glide__arrow {
     background: #70d100;
     border: 1px solid black;
