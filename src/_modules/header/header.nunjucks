@@ -15,33 +15,31 @@
         </svg>
       </div>
       <!--BURGER MENU BUTTON END -->
-      <nav>
-        <div class="totemHeader__leftDropdown">
-          <a class="totemHeader__link has-submenu" href="#">
-            <i class="icon-arrow-down2"></i> COMPANY
-          </a>
-          <div class="totemHeader__leftDropdownContent">
-            <ul class="totemHeader__leftDropdownContentList">
-              <li class="totemHeader__leftDropdownItem">
-                <a href="#">CHI SIAMO</a>
-              </li>
-              <li class="totemHeader__leftDropdownItem">
-                <a href="#">PARTNERS</a>
-              </li>
-              <li class="totemHeader__leftDropdownItem">
-                <a href="#">CONTATTI</a>
-              </li>
-            </ul>
-          </div>
+      <div class="totemHeader__leftDropdown">
+        <a class="totemHeader__link has-submenu" href="#">
+          <i class="icon-arrow-down2"></i> COMPANY
+        </a>
+        <div class="totemHeader__leftDropdownContent">
+          <ul class="totemHeader__leftDropdownContentList">
+            <li class="totemHeader__leftDropdownItem">
+              <a href="#">CHI SIAMO</a>
+            </li>
+            <li class="totemHeader__leftDropdownItem">
+              <a href="#">PARTNERS</a>
+            </li>
+            <li class="totemHeader__leftDropdownItem">
+              <a href="#">CONTATTI</a>
+            </li>
+          </ul>
         </div>
-        <a class="totemHeader__link" href="#">
-          TEAMS
-        </a>
-        <a class="totemHeader__link" href="#">
-          NEWS
-        </a>
       </div>
-    </nav>
+      <a class="totemHeader__link" href="#">
+        TEAMS
+      </a>
+      <a class="totemHeader__link" href="#">
+        NEWS
+      </a>
+    </div>
     <div class="totemHeader__wrapper__center">
       <img class="totemHeader__logoImage" src="{{ _logo }}" alt="logo">
     </div>
