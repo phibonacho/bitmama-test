@@ -16,12 +16,12 @@
       @include headline-1;
       margin-bottom: 1.5rem;
 
-      @include respond-above(md) {
+      @include respond-above(m) {
         @include headline-3;
       }
     }
 
-    @include respond-above(md) {
+    @include respond-above(m) {
       max-width: 1200px;
     }
 
@@ -126,7 +126,7 @@
     font-size: rem(15px);
     padding: .5rem 1rem;
 
-    @include respond-above(md) {
+    @include respond-above(m) {
       padding: 1rem 15rem;
     }
   }
