@@ -1,42 +1,58 @@
+@import "./src/_styles/variables";
+
 // teamsection styles
 .teamSection {
-  padding: 0 3rem 3rem 3rem;
-  padding-bottom: 0;
+  padding: 0 3rem;
 
   .teamSection__title {
+    @include headline-1;
     text-align: center;
     padding: .5rem 0;
+
+    @include respond-above(m) {
+      @include headline-3;
+    }
   }
 
   .teamSection__wrapper {
     margin: auto;
     display: flex;
     flex-flow: row wrap;
-    max-width: 90rem;
+    max-width: 90rem; // todo: fix on breakpoint
     justify-content: space-around;
+    max-width: 1400px;
 
     .teamSection__item {
+      flex: 1 0 100%;
+      margin-bottom: 3rem;
+      background: teal;
+      max-width: 100%;
       cursor: pointer;
       position: relative;
-      flex: 1 0 calc(33.33% - 50px);
-      max-width: 430px;
-      height: 430px;
-      margin-bottom: 50px;
-      background: teal;
-  
+
+      @include respond-above(m) {
+        flex: 1 0 50%;
+        max-width: 45%;
+      }
+
+      @include respond-above(l) {
+        flex: 1 0 33%;
+        max-width: 30%;
+      }
+
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
-  
+
       .teamSection__item__overlay {
         position: absolute;
         width: 100%;
         height: 100%;
         left:0;
         top: 0;
-        background: #78b027;
+        background: $primary;
         opacity: 0;
       }
 
@@ -62,27 +78,6 @@
         color: white;
       }
     }
-  }
-}
-
-
-@media screen and (max-width: 1560px) {
-  .teamSection__item {
-    cursor: pointer;
-    position: relative;
-    flex: 1 0 50%;
-    max-width: 430px;
-    height: 430px;
-  }
-}
-
-@media screen and (max-width: 996px) {
-  .teamSection__item {
-    cursor: pointer;
-    position: relative;
-    flex: 1 0 100%;
-    max-width: 430px;
-    height: 430px;
   }
 }
 
