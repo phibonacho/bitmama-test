@@ -5,6 +5,7 @@
 // news section styles
 .newsSection {
   padding: 3rem;
+  position: relative;
 
   @include respond-above(m) {
     padding: 9rem 3rem 3rem;
@@ -14,6 +15,21 @@
     width: 100%;
     max-width: 90rem;
     margin: auto;
+  }
+
+  #particle-1, #particle-2, #particle-3 {
+    position: absolute;
+    top: -270px;
+    z-index: -1;
+  }
+
+  #flare-decoration {
+    position: absolute;
+    width: 90%;
+    top: -500px;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 
   .newsSection__title {

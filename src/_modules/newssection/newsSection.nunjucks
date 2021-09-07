@@ -5,6 +5,10 @@
 {% set _newstext = spec.newstext or [] %}
 
 <section class="newsSection">
+  <img src="images/p3.png" alt="particle 3" id="particle-3">
+  <img src="images/p2.png" alt="particle 2" id="particle-2">
+  <img src="images/p1.png" alt="particle 1" id="particle-1">
+  <img src="images/flare-export.png" alt="flare decoration" id="flare-decoration">
   <div class="newsSection__wrapper">
     <div class="newsSection__title">
       <h2>{{ _title }}</h2>
