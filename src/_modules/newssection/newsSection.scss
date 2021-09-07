@@ -29,6 +29,11 @@
     left: 0;
     right: 0;
 
+    @include respond-above(s) {
+      width: 90%;
+      top: 250px;
+      left: 500px;
+    }
 
     @include respond-above(m) {
       width: 90%;

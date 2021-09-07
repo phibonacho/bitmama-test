@@ -14,7 +14,7 @@
       <li class="mobile__menu__list__item">
         <div class="langStore__wrapper">
           <div class="lang__section">
-            <div class="dropdown">
+            <div class="dropdown" id="dropdown-toggle">
               <div class="dropdown__decoration">
                 <i class="icon-arrow-down2"></i>
               </div>
@@ -23,6 +23,13 @@
               </div>
               <div class="dropdown__flag">
                 <img src="images/it.svg" alt="">
+              </div>
+              <div class="dropdown__options" id="dropdown-content" style="display: none">
+                <ul class="dropdown__options__list">
+                  <li class="dropdown__options__item">
+                    <a href="#">ENGLISH</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
