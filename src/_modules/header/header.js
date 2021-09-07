@@ -22,6 +22,17 @@ export default class Header {
 
       document.documentElement.classList.toggle('stop-scroll');
     });
+
+    let dropdowns = document.querySelectorAll('.has-submenu'); // => lista di elementi html
+
+    dropdowns.forEach(dropdown => dropdown.addEventListener('click',  (event) => {
+      dropdown
+        .nextElementSibling
+        .firstElementChild
+        .classList.toggle('active');
+
+    }));
+
   }
 }
 
