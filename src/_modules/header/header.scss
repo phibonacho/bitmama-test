@@ -60,6 +60,10 @@
       @include respond-above(m) {
         display: flex;
       }
+
+      .lang-link {
+        margin-right: 20px;
+      }
     }
   }
 
@@ -72,7 +76,7 @@
     position: absolute;
     top: 40px;
     left: -30%;
-    width:200px;
+    width: 200px;
   }
 
   .totemHeader__dropdownContentList {
@@ -98,15 +102,9 @@
     text-decoration: none;
   }
 
-  .totemHeader__link.lang-link:hover + .totemHeader__rightDropdownContent .totemHeader__rightDropdownContentList {
-    display: block;
-    list-style: none;
-    background: black;
-    padding: 0;
-  }
   .totemHeader__rightDropdownContent {
     position: absolute;
-    top: 125%;
+    top: 40px;
     width: 100px;
   }
   .totemHeader__link {
@@ -165,5 +163,6 @@
 @media screen and (max-width: 1150px){
   .totemHeader__burgerMenuButton {
     display: block;
+    cursor: pointer;
   }
 }

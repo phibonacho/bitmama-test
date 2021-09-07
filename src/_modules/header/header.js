@@ -19,18 +19,15 @@ export default class Header {
           mobileMenu.style.display = 'none';
         }, 500);
       }
-
       document.documentElement.classList.toggle('stop-scroll');
     });
 
+
+    
     let dropdowns = document.querySelectorAll('.has-submenu'); // => lista di elementi html
 
     dropdowns.forEach(dropdown => dropdown.addEventListener('click',  (event) => {
-      dropdown
-        .nextElementSibling
-        .firstElementChild
-        .classList.toggle('active');
-
+      dropdown.nextElementSibling.firstElementChild.classList.toggle('active');
     }));
 
   }

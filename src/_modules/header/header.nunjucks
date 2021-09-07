@@ -44,10 +44,10 @@
         <img class="totemHeader__logoImage" src="{{ _logo }}" alt="logo">
       </div>
       <div class="totemHeader__wrapper__right">
-        <div class="totemHeader__dropdown j-lang">
-          <a href="#" class="totemHeader__link lang-link"><i class="icon-arrow-down2"></i> IT <i class="icon-flag"></i></a>
+        <div class="totemHeader__dropdown">
+          <a href="#" class="totemHeader__link lang-link has-submenu"><i class="icon-arrow-down2"></i> IT <i class="icon-flag"></i></a>
           <div class="totemHeader__rightDropdownContent">
-            <ul class="totemHeader__rightDropdownContentList">
+            <ul class="totemHeader__dropdownContentList">
               <li class="totemHeader__rightDropdownItem">
                 <a href="#">EN <i class="icon-flag"></i></a>
               </li>
