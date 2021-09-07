@@ -1,9 +1,15 @@
-// newssection styles
+@import "./src/_styles/variables";
+@import "./src/_styles/mixin";
+@import "./src/_styles/typography";
+
+// news section styles
 .newsSection {
   padding: 3rem;
 
   .newsSection__wrapper {
     width: 100%;
+    max-width: 90rem;
+    margin: auto;
   }
 
   .newsSection__title {
@@ -12,36 +18,80 @@
   }
 
   .newsSection__carouselContainer {
-    height: 200px;
-    max-width: 1200px;
     margin: auto;
+    width: 75%;
+
+    .glide {
+      width: 80%;
+      margin: auto;
+    }
+  }
+
+  .glide__slide {
+    height: 12.5rem;
+    background-image: url('https://replytotem.com/wp-content/themes/totem/build/images/shadows-lights/founder-back.svg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+    @include respond-above(s) {
+      padding: 0 2rem;
+    }
+
+    @include respond-above(m) {
+      padding: 0 3rem;
+    }
   }
 
   .glide__slide-content {
-    background-image: url('https://replytotem.com/wp-content/themes/totem/build/images/shadows-lights/founder-back.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 200px;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+
+    @include respond-between(s_plus,m_minus) {
+      padding: 0 3.5rem;
+    }
+
+    h4 {
+      margin-bottom: .75rem;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+
+      font-size: 1.2rem;
+      letter-spacing: .2rem;
+    }
+
     text-align: center;
-    margin: 0 auto;
-    padding: 3rem;
 
     a {
+
       text-decoration: none;
-      color: #70d100;
+      color: $primary;
+
+      flex: 1 0 40%;
+
+      i {
+        font-size: 15px;
+        font-weight: bold;
+        margin-right: 5px;
+      }
     }
 
-    a i {
-      font-size: 15px;
-      font-weight: bold;
-      margin-right: 5px;
-    }
   }
   .glide__arrow {
-    background: #70d100;
+    background: $primary;
     border: 1px solid black;
   }
+
+  .glide__arrow--right {
+    right: -6rem;
+  }
+
+  .glide__arrow--left {
+    left: -6rem;
+  }
+
   .glide__readAll {
     text-align: center;
     margin-top: 5rem;

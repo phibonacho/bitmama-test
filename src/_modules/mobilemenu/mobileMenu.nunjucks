@@ -1,0 +1,37 @@
+{% macro content(spec) %}
+
+{% set spec = spec or {} %}
+{% set _links = spec.links or [] %}
+
+<div class="mobileMenu" id="mobile-menu">
+  <div class="mobileMenu__content__wrapper">
+    <ul class="mobile__menu__list">
+      {% for link in _links %}
+      <li class="mobile__menu__list__item">
+        <a href="{{ link.url }}">{{ link.name }}</a>
+      </li>
+      {% endfor %}
+      <li class="mobile__menu__list__item">
+        <div class="langStore__wrapper">
+          <div class="lang__section">
+            <div class="dropdown">
+              <div class="dropdown__decoration">
+                <i class="icon-arrow-down2"></i>
+              </div>
+              <div class="dropdown__selected">
+                <span>IT</span>
+              </div>
+              <div class="dropdown__flag">
+                <img src="images/it.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="store__section">
+            <button class="storeButton">negozio <i class="icon-arrow-right2"></i></button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+{% endmacro %}
