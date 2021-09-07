@@ -25,11 +25,15 @@
 
   #flare-decoration {
     position: absolute;
-    width: 90%;
-    top: -500px;
     bottom: 0;
     left: 0;
     right: 0;
+
+
+    @include respond-above(m) {
+      width: 90%;
+      top: -500px;
+    }
   }
 
   .newsSection__title {

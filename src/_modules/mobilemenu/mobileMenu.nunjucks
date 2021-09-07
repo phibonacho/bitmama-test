@@ -3,7 +3,7 @@
 {% set spec = spec or {} %}
 {% set _links = spec.links or [] %}
 
-<div class="mobileMenu" id="mobile-menu">
+<div class="mobileMenu" id="mobile-menu" style="display: none">
   <div class="mobileMenu__content__wrapper">
     <ul class="mobile__menu__list">
       {% for link in _links %}
