@@ -6,6 +6,9 @@
 {% set _urls = spec.urls or [] %}
 
 <section class="teamSection">
+  <div class="teamSection__decoration">
+    <img src="images/laser.png" alt="laser image">
+  </div>
   <div class="teamSection__title">
     <h2>{{ _title }}</h2>
   </div>

@@ -1,16 +1,57 @@
 @import "./src/_styles/variables";
+@import "./src/_styles/mixin";
+@import "./src/_styles/typography";
 
 // teamsection styles
 .teamSection {
   padding: 0 3rem;
 
-  .teamSection__title {
-    @include headline-1;
-    text-align: center;
-    padding: .5rem 0;
+  .teamSection__decoration {
+    position: relative;
 
     @include respond-above(m) {
-      @include headline-3;
+      margin-top: 117px;
+    }
+
+    img {
+      position: absolute;
+      top: -145px;
+      left: 50%;
+
+      transform: translateX(-50%);
+      max-width: unset;
+
+      width: 700px;
+
+      @include respond-above(s) {
+        top: -270px;
+        width: 1200px;
+      }
+
+      @include respond-above(m) {
+        top: -432px;
+        margin-top: 117px;
+        width: 1440px;
+      }
+
+    }
+  }
+
+  .teamSection__title {
+    text-align: center;
+    padding: .5rem 0;
+    margin-bottom: 1rem;
+
+    @include respond-above(s) {
+      margin-bottom: 2rem;
+    }
+
+    @include respond-above(m) {
+      margin-bottom: 4rem ;
+    }
+
+    h2 {
+      @include headline-1;
     }
   }
 
@@ -18,7 +59,6 @@
     margin: auto;
     display: flex;
     flex-flow: row wrap;
-    max-width: 90rem; // todo: fix on breakpoint
     justify-content: space-around;
     max-width: 1400px;
 
