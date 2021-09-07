@@ -15,12 +15,12 @@
         </svg>
       </div>
       <div class="totemHeader__wrapper__left">
-        <div class="totemHeader__leftDropdown">
+        <div class="totemHeader__dropdown">
           <a class="totemHeader__link has-submenu" href="#">
             <i class="icon-arrow-down2"></i> COMPANY
           </a>
-          <div class="totemHeader__leftDropdownContent">
-            <ul class="totemHeader__leftDropdownContentList">
+          <div class="totemHeader__dropdownContent">
+            <ul class="totemHeader__dropdownContentList">
               <li class="totemHeader__leftDropdownItem">
                 <a href="#">CHI SIAMO</a>
               </li>
@@ -44,7 +44,7 @@
         <img class="totemHeader__logoImage" src="{{ _logo }}" alt="logo">
       </div>
       <div class="totemHeader__wrapper__right">
-        <div class="totemHeader__langDropdown j-lang">
+        <div class="totemHeader__dropdown j-lang">
           <a href="#" class="totemHeader__link lang-link"><i class="icon-arrow-down2"></i> IT <i class="icon-flag"></i></a>
           <div class="totemHeader__rightDropdownContent">
             <ul class="totemHeader__rightDropdownContentList">
