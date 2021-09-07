@@ -5,6 +5,7 @@ export default class Header {
     this.name = 'Header';
     console.log('%s module', this.name.toLowerCase());
 
+    
     document.getElementById('mobile-menu-button').addEventListener('click', (event) => {
       let mobileMenu = document.getElementById('mobile-menu');
 
@@ -24,8 +25,7 @@ export default class Header {
 
 
     
-    let dropdowns = document.querySelectorAll('.has-submenu'); // => lista di elementi html
-
+    let dropdowns = document.querySelectorAll('.has-submenu'); 
     dropdowns.forEach(dropdown => dropdown.addEventListener('click',  (event) => {
       dropdown.nextElementSibling.firstElementChild.classList.toggle('active');
     }));
