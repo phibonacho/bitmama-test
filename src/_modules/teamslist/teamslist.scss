@@ -59,9 +59,25 @@
             flex: 1 0 100%;
             margin: 2rem 0;
 
+            @include respond-above(s) {
+                height: 300px;
+            }
+
+            @include respond-above(m) {
+                flex: 1 0 50%;
+            }
+
             .teamList__item__image img {
                 width: 130px;
                 margin: 0 2rem;
+
+                @include respond-above(s) {
+                    width: 250px;
+                }
+
+                @include respond-between(s_plus, m_minus) {
+                    margin-left: 100px;
+                }
             }
 
             .teamList__item__textContents {
@@ -70,6 +86,11 @@
                     color: $primary;
                     font-size: 30px;
                     margin-bottom: 1rem;
+
+                    @include respond-above(s) {
+                        font-size: 45px;
+                        margin-bottom: 2rem;
+                    }
                 }
 
                 & a {
