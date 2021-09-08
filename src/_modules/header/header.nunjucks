@@ -33,7 +33,7 @@
             </ul>
           </div>
         </div>
-        <a class="totemHeader__link" href="#">
+        <a class="totemHeader__link" href="./teams.html">
           TEAMS
         </a>
         <a class="totemHeader__link" href="#">
@@ -41,7 +41,9 @@
         </a>
       </div>
       <div class="totemHeader__wrapper__center">
-        <img class="totemHeader__logoImage" src="{{ _logo }}" alt="logo">
+        <a href="./index.html">
+          <img class="totemHeader__logoImage" src="{{ _logo }}" alt="logo">
+        </a>
       </div>
       <div class="totemHeader__wrapper__right">
         <div class="totemHeader__dropdown">

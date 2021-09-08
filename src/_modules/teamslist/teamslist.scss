@@ -1,0 +1,13 @@
+// teamslist styles
+.teamsList {
+    padding-top: 10rem;
+    width: 100%;
+
+    @include respond-above(m) {
+        padding-top: 15rem;
+    }
+
+    .teamsList__title {
+        text-align: center;
+    }
+}

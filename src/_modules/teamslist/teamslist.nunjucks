@@ -1,0 +1,15 @@
+{% macro content(spec) %}
+
+{% set spec = spec or {} %}
+{% set _class = spec.class or '' %}
+
+<section class="teamsList">
+  <div class="teamsList__title">
+    <h2>Teams</h2>
+  </div>
+  <div class="teamsList__wrapper">
+    
+  </div>
+</section>
+
+{% endmacro %}
