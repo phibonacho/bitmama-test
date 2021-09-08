@@ -1,0 +1,62 @@
+{% macro content(spec) %}
+
+{% set spec = spec or {} %}
+{% set _class = spec.class or '' %}
+
+<section class="newsCards">
+  <div class="newsCards__title">
+    <h2>News</h2>
+  </div>
+  <div class="newsCards__wrapper">
+    <div class="newsCards__item">
+      <div class="newsCards__item__image">
+        <img src="../../images/news.png" alt="news image">
+      </div>
+      <div class="newsCards__item__textContent">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="newsCards__item__callToActions">
+        <div class="newsCards__item__callToActions__read">
+          <a>Leggi</a>
+        </div>
+        <div class="newsCards__item__callToActions__share">
+          <a>Condividi</a>
+        </div>
+      </div>
+    </div>
+    <div class="newsCards__item">
+      <div class="newsCards__item__image">
+        <img src="../../images/news.png" alt="news image">
+      </div>
+      <div class="newsCards__item__textContent">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="newsCards__item__callToActions">
+        <div class="newsCards__item__callToActions__read">
+          <a>Leggi</a>
+        </div>
+        <div class="newsCards__item__callToActions__share">
+          <a>Condividi</a>
+        </div>
+      </div>
+    </div>
+    <div class="newsCards__item">
+      <div class="newsCards__item__image">
+        <img src="../../images/news.png" alt="news image">
+      </div>
+      <div class="newsCards__item__textContent">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="newsCards__item__callToActions">
+        <div class="newsCards__item__callToActions__read">
+          <a>Leggi</a>
+        </div>
+        <div class="newsCards__item__callToActions__share">
+          <a>Condividi</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endmacro %}
