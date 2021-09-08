@@ -2,15 +2,21 @@
 
 {% import "_modules/header/header.nunjucks" as header %}
 {% import "_modules/teamslist/teamslist.nunjucks" as teamsList %}
+{% import "_modules/shopbanner/shopbanner.nunjucks" as shopBanner %}
 {% import "_modules/partnersection/partnerSection.nunjucks" as partnerSection %}
 {% import "_modules/footer/footer.nunjucks" as footer %}
 
 {% block content %}
   <div class="main-container">
+
     {{ header.content({
       logo: "./images/logo.svg"
     }) }}
+
     {{ teamsList.content(site.data.team) }}
+
+    {{ shopBanner.content() }}
+
     {{ partnerSection.content({
       title: 'I nostri partner',
       featuredSponsor: "images/Reply-Logo.svg",
@@ -21,6 +27,8 @@
         "images/sols.png"
       ]
     }) }}
+
     {{ footer.content() }}
+
   </div>
 {% endblock %}

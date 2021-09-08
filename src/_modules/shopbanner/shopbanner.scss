@@ -1,0 +1,47 @@
+// shopbanner styles
+
+.shopBanner {
+    margin-bottom: 2rem;
+
+    .shopBanner__wrapper {
+        margin: auto;
+        width: 90%;
+        background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(207, 63%, 35%, 1) 100%);
+
+        @include respond-above(s) {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .shopBanner__textContents {
+            padding: 2rem 3rem;
+            text-align: center;
+
+            @include respond-above(s) {
+                max-width: 40%;
+            }
+
+            h4 {
+                font-size: 22px;
+                margin-bottom: 1rem;
+
+                @include respond-above(s) {
+                    font-size: 35px;
+                }
+            }
+
+            a {
+                color: $primary;
+            }
+
+            a i {
+                padding-right: .3rem;
+                color: $primary;
+            }
+        }
+        .shopBanner__image {
+            text-align: center;
+        }
+    }
+}

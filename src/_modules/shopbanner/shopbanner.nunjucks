@@ -1,0 +1,23 @@
+{% macro content(spec) %}
+
+{% set spec = spec or {} %}
+{% set _class = spec.class or '' %}
+
+<section class="shopBanner">
+  <div class="shopBanner__wrapper">
+    <div class="shopBanner__textContents">
+      <h4>
+        Scopri i prodotti Reply Totem nel nostro store online
+      </h4>
+      <a>
+        <i class="icon-arrow-right2"></i>
+        Vai allo store
+      </a>
+    </div>
+    <div class="shopBanner__image">
+      <img src="../../images/shop.png" alt="store image">
+    </div>
+  </div>
+</section>
+
+{% endmacro %}
