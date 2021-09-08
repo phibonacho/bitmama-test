@@ -15,7 +15,7 @@
   <div class="teamSection__wrapper">
     {% for url in _urls %}
       <div class="teamSection__item">
-        <img src="{{ url }}" alt="team image">
+          <img src="{{ url }}" alt="team image">
         <div class="teamSection__item__overlay"></div>
         <i class="icon-arrow-right2"></i>
       </div>

@@ -1,13 +1,89 @@
 // teamslist styles
 .teamsList {
     padding-top: 10rem;
+    margin-bottom: 2rem;
     width: 100%;
 
     @include respond-above(m) {
         padding-top: 15rem;
     }
 
-    .teamsList__title {
+    .teamsList__title h2 {
+        position: relative;
         text-align: center;
+        margin-bottom: 30px;
+        @include headline-1;
+
+        &::before {
+            filter: blur(4px);
+            content: "";
+            display: block;
+            height: 2px;
+            background: linear-gradient(
+                90deg
+            ,transparent,#70d100 30%,#dbff81 50%,#70d100 70%,transparent);
+            width: 90%;
+            position: absolute;
+            bottom: -40%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &::after {
+            content: "";
+            display: block;
+            height: 2px;
+            background: linear-gradient(
+                90deg
+            ,transparent,#70d100 30%,#dbff81 50%,#70d100 70%,transparent);
+            width: 90%;
+            position: absolute;
+            bottom: -40%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .teamsList__wrapper {
+        margin: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        max-width: 1400px;
+
+        .teamList__item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 150px;
+            text-align: center;
+            flex: 1 0 100%;
+            margin: 2rem 0;
+
+            .teamList__item__image img {
+                width: 130px;
+                margin: 0 2rem;
+            }
+
+            .teamList__item__textContents {
+
+                & h4 {
+                    color: $primary;
+                    font-size: 30px;
+                    margin-bottom: 1rem;
+                }
+
+                & a {
+                    color: $primary;
+                }
+
+                & a i {
+                    font-weight: bold;
+                    padding: 3px;
+                    margin-right: .5rem;
+                    border: 2px solid white;
+                    border-radius: 50%;
+                }
+            }
+        }
     }
 }

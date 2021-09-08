@@ -10,7 +10,7 @@
     {{ header.content({
       logo: "./images/logo.svg"
     }) }}
-    {{ teamsList.content() }}
+    {{ teamsList.content(site.data.team) }}
     {{ partnerSection.content({
       title: 'I nostri partner',
       featuredSponsor: "images/Reply-Logo.svg",

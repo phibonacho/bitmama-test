@@ -7,5 +7,13 @@
     "https://replytotem.com/wp-content/uploads/2021/05/Rainbow-Six-Siege.jpg",
     "https://replytotem.com/wp-content/uploads/2021/06/cr_square.jpg",
     "https://replytotem.com/wp-content/uploads/2021/05/valorant.jpg"
+  ],
+  "teamNames": [
+    "Apex Legends",
+    "Brawl Stars",
+    "Fortnite",
+    "Six Seige",
+    "Clash Royale",
+    "Valorant"
   ]
 }
