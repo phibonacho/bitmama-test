@@ -19,7 +19,8 @@
 
   #particle-1, #particle-2, #particle-3 {
     position: absolute;
-    top: -270px;
+    top: -70px;
+    left: -250px;
     z-index: -1;
   }
 
@@ -119,7 +120,7 @@
     }
 
     h4 {
-      margin-bottom: .75rem;
+      margin-bottom: 2rem;
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 3;
@@ -161,7 +162,7 @@
 
   .glide__readAll {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
   .glide__readAll a {
     text-decoration: none;

@@ -13,7 +13,8 @@ export default class NewsSection {
       perView: 3,
       breakpoints: {
         1024: {
-          perView: 2
+          perView: 2,
+          gap: 30
         },
         767: {
           perView: 1,

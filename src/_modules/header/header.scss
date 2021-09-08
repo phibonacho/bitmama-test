@@ -74,8 +74,8 @@
 
   .totemHeader__dropdownContent {
     position: absolute;
-    top: 40px;
-    left: -30%;
+    top: 41px;
+    left: -25%;
     width: 200px;
   }
 
@@ -104,10 +104,11 @@
 
   .totemHeader__rightDropdownContent {
     position: absolute;
-    top: 40px;
+    top: 41px;
     width: 100px;
   }
   .totemHeader__link {
+    font-size: 20px;
     align-self: center;
     padding: 0 1.5rem;
     text-decoration: none;
@@ -132,6 +133,7 @@
     cursor: pointer;
     align-self: center;
     padding: 5px 15px;
+    font-size: 20px;
     color: $green-dark;
     background-color: white;
     border-radius: 50px;

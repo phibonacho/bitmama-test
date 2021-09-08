@@ -4,7 +4,7 @@
 
 // teamsection styles
 .teamSection {
-  padding: 0 3rem;
+  padding: 3rem;
 
   .teamSection__decoration {
     position: relative;
@@ -40,7 +40,7 @@
   .teamSection__title {
     text-align: center;
     padding: .5rem 0;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
     @include respond-above(s) {
       margin-bottom: 2rem;
