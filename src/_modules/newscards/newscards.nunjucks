@@ -2,18 +2,20 @@
 
 {% set spec = spec or {} %}
 {% set _class = spec.class or '' %}
+{% set _newslist = spec.newslist or [] %}
 
 <section class="newsCards">
   <div class="newsCards__title">
     <h2>News</h2>
   </div>
   <div class="newsCards__wrapper">
+    {% for new in _newslist %}
     <div class="newsCards__item">
       <div class="newsCards__item__image">
-        <img src="../../images/news.png" alt="news image">
+        <img src="{{new.imgurl}}" alt="news image">
       </div>
       <div class="newsCards__item__textContent">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>{{new.text}}</p>
       </div>
       <div class="newsCards__item__callToActions">
         <div class="newsCards__item__callToActions__read">
@@ -30,50 +32,7 @@
         </div>
       </div>
     </div>
-    <div class="newsCards__item">
-      <div class="newsCards__item__image">
-        <img src="../../images/news.png" alt="news image">
-      </div>
-      <div class="newsCards__item__textContent">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div class="newsCards__item__callToActions">
-        <div class="newsCards__item__callToActions__read">
-          <a>
-            <i class="icon-search"></i>
-            Leggi
-          </a>
-        </div>
-        <div class="newsCards__item__callToActions__share">
-          <a>
-            Condividi
-            <i class="icon-arrow-right2"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="newsCards__item">
-      <div class="newsCards__item__image">
-        <img src="../../images/news.png" alt="news image">
-      </div>
-      <div class="newsCards__item__textContent">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div class="newsCards__item__callToActions">
-        <div class="newsCards__item__callToActions__read">
-          <a>
-            <i class="icon-search"></i>
-            Leggi
-          </a>
-        </div>
-        <div class="newsCards__item__callToActions__share">
-          <a>
-            Condividi
-            <i class="icon-arrow-right2"></i>
-          </a>
-        </div>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </section>
 

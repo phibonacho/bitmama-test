@@ -14,7 +14,7 @@
       logo: "./images/logo.svg"
     }) }}
 
-    {{ newsCards.content() }}
+    {{ newsCards.content(site.data.newslist) }}
 
     {{ shopBanner.content() }}
 
