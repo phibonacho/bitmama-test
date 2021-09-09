@@ -17,10 +17,16 @@
       </div>
       <div class="newsCards__item__callToActions">
         <div class="newsCards__item__callToActions__read">
-          <a>Leggi</a>
+          <a>
+            <i class="icon-search"></i>
+            Leggi
+          </a>
         </div>
         <div class="newsCards__item__callToActions__share">
-          <a>Condividi</a>
+          <a>
+            Condividi
+            <i class="icon-arrow-right2"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -33,10 +39,16 @@
       </div>
       <div class="newsCards__item__callToActions">
         <div class="newsCards__item__callToActions__read">
-          <a>Leggi</a>
+          <a>
+            <i class="icon-search"></i>
+            Leggi
+          </a>
         </div>
         <div class="newsCards__item__callToActions__share">
-          <a>Condividi</a>
+          <a>
+            Condividi
+            <i class="icon-arrow-right2"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -49,10 +61,16 @@
       </div>
       <div class="newsCards__item__callToActions">
         <div class="newsCards__item__callToActions__read">
-          <a>Leggi</a>
+          <a>
+            <i class="icon-search"></i>
+            Leggi
+          </a>
         </div>
         <div class="newsCards__item__callToActions__share">
-          <a>Condividi</a>
+          <a>
+            Condividi
+            <i class="icon-arrow-right2"></i>
+          </a>
         </div>
       </div>
     </div>

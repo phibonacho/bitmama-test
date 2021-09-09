@@ -49,9 +49,23 @@
         justify-content: space-around;
         max-width: 1400px;
 
+        @include respond-above(s) {
+            padding: 0 2rem;
+        }
+
         .newsCards__item {
             width: 90%;
             margin-bottom: 2rem;
+
+            @include respond-above(s) {
+                width: 45%;
+                margin-bottom: 3rem;
+            }
+
+            @include respond-above(m) {
+                width: 30%;
+                margin-bottom: 3rem;
+            }
 
             .newsCards__item__image {
 
@@ -65,7 +79,7 @@
                 background: #292929;
                 margin-top: -5px;
                 padding: 2rem 1rem;
-                border-bottom: 1px solid white;
+                border-bottom: 1px solid #848484;
             }
 
             .newsCards__item__callToActions {
@@ -78,6 +92,13 @@
                 .newsCards__item__callToActions__read a,
                 .newsCards__item__callToActions__share a {
                     color: $primary;
+                }
+
+                .newsCards__item__callToActions__read a i,
+                .newsCards__item__callToActions__share a i {
+                    margin: .3rem;
+                    font-size: 12px;
+                    font-weight: bold;
                 }
             }
         }
