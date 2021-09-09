@@ -11,15 +11,17 @@
   </div>
   <div class="teamsList__wrapper">
     {% for url in _urls %}
-      <div class="teamList__item">
-        <div class="teamList__item__image">
-          <img src="{{ url }}" alt="team image">
+      <a href="#">
+        <div class="teamList__item">
+          <div class="teamList__item__image">
+            <img src="{{ url }}" alt="team image">
+          </div>
+          <div class="teamList__item__textContents">
+            <h4>Team name</h4>
+            <a><i class="icon-arrow-right2"></i> Vedi team</a>
+          </div>
         </div>
-        <div class="teamList__item__textContents">
-          <h4>Team name</h4>
-          <a><i class="icon-arrow-right2"></i> Vedi team</a>
-        </div>
-      </div>
+      </a>
     {% endfor %}
   </div>
 </section>

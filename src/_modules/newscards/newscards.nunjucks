@@ -11,21 +11,23 @@
   <div class="newsCards__wrapper">
     {% for new in _newslist %}
     <div class="newsCards__item">
-      <div class="newsCards__item__image">
-        <img src="{{new.imgurl}}" alt="news image">
-      </div>
-      <div class="newsCards__item__textContent">
-        <p>{{new.text}}</p>
-      </div>
+      <a href="#">
+        <div class="newsCards__item__image">
+          <img src="{{new.imgurl}}" alt="news image">
+        </div>
+        <div class="newsCards__item__textContent">
+          <p>{{new.text}}</p>
+        </div>
+      </a>
       <div class="newsCards__item__callToActions">
         <div class="newsCards__item__callToActions__read">
-          <a>
+          <a href="#">
             <i class="icon-search"></i>
             Leggi
           </a>
         </div>
         <div class="newsCards__item__callToActions__share">
-          <a>
+          <a href="#">
             Condividi
             <i class="icon-arrow-right2"></i>
           </a>

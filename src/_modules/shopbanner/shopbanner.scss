@@ -6,6 +6,7 @@
     .shopBanner__wrapper {
         margin: auto;
         width: 90%;
+        max-width: 1300px;
         background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(207, 63%, 35%, 1) 100%);
 
         @include respond-above(s) {
