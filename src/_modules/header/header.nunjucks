@@ -22,7 +22,7 @@
           <div class="totemHeader__dropdownContent">
             <ul class="totemHeader__dropdownContentList">
               <li class="totemHeader__leftDropdownItem">
-                <a href="#">CHI SIAMO</a>
+                <a href="./chi-siamo.html">CHI SIAMO</a>
               </li>
               <li class="totemHeader__leftDropdownItem">
                 <a href="#">PARTNERS</a>

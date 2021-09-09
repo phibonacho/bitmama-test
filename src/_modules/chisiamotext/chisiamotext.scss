@@ -1,0 +1,68 @@
+// chisiamotext styles
+.chiSiamoText {
+    padding-top: 10rem;
+    margin-bottom: 2rem;
+    width: 100%;
+
+    @include respond-above(m) {
+        padding-top: 15rem;
+    }
+
+    .chiSiamoText__title h2 {
+        position: relative;
+        text-align: center;
+        margin-bottom: 4rem;
+        @include headline-1;
+
+        &::before {
+            filter: blur(4px);
+            content: "";
+            display: block;
+            height: 2px;
+            background: linear-gradient(90deg
+            ,transparent,#70d100 30%,#dbff81 50%,#70d100 70%,transparent);
+            width: 90%;
+            position: absolute;
+            bottom: -40%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &::after {
+            content: "";
+            display: block;
+            height: 2px;
+            background: linear-gradient(
+                90deg
+            ,transparent,#70d100 30%,#dbff81 50%,#70d100 70%,transparent);
+            width: 90%;
+            position: absolute;
+            bottom: -40%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .chiSiamoText__wrapper {
+        margin: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        max-width: 1000px;
+        padding: 0 3rem;
+
+        @include respond-above(s) {
+            padding: 0 2em;
+        }
+
+        .chiSiamoText__content {
+            margin-bottom: 5rem;
+            text-align: center;
+            line-height: 2rem;
+
+            @include respond-above(s) {
+                margin-bottom: 8rem;
+            }
+        }
+    }
+
+}

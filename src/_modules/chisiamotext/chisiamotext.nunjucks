@@ -1,0 +1,19 @@
+{% macro content(spec) %}
+
+{% set spec = spec or {} %}
+{% set _class = spec.class or '' %}
+
+<section class="chiSiamoText">
+  <div class="chiSiamoText__title">
+    <h2>Chi siamo</h2>
+  </div>
+  <div class="chiSiamoText__wrapper">
+    <div class="chiSiamoText__content">
+      <p>
+        Reply Totem è un Team Esports incentrato sulla selezione e la crescita di giocatori, influencer e creatori di contenuti del mondo Gaming. Fondato in Italia nel 2019 da un gruppo di imprenditori e professionisti, con uno staff di respiro internazionale, ha da subito espresso un grande potenziale. Lo sviluppo del talento e della competitività nel rispetto dei valori umani anima il nostro gruppo di lavoro in un'ottica di continua crescita e rinnovamento del settore. 
+      </p>
+    </div>
+  </div>
+</section>
+
+{% endmacro %}

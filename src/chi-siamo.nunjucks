@@ -1,0 +1,35 @@
+{% extends '_layouts/base.nunjucks' %}
+
+{% import "_modules/link/link.nunjucks" as link %}
+{% import "_modules/header/header.nunjucks" as header %}
+{% import "_modules/chisiamotext/chisiamotext.nunjucks" as chiSiamoText %}
+{% import "_modules/shopbanner/shopbanner.nunjucks" as shopBanner %}
+{% import "_modules/partnersection/partnerSection.nunjucks" as partnerSection %}
+{% import "_modules/footer/footer.nunjucks" as footer %}
+
+{% block content %}
+  <div class="main-container">
+
+    {{ header.content({
+      logo: "./images/logo.svg"
+    }) }}
+
+    {{ chiSiamoText.content() }}
+
+    {{ shopBanner.content() }}
+
+    {{ partnerSection.content({
+      title: 'I nostri partner',
+      featuredSponsor: "images/Reply-Logo.svg",
+      sponsors: [
+        "images/kasp.svg",
+        "images/udoo.png",
+        "images/blue.png",
+        "images/sols.png"
+      ]
+    }) }}
+
+    {{ footer.content() }}
+
+  </div>
+{% endblock %}
