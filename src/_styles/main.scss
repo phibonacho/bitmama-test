@@ -1,18 +1,22 @@
 // Normalize Styles
 @import 'node_modules/normalize.css/normalize';
 
+
 // custom font
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
 
 // Glide
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
 
 @import "./variables";
 @import "./mixin";
 @import "./reset";
 @import "./typography";
 @import "./icons";
+
 
 // Import Modules
 @import '../_modules/link/link';
@@ -24,10 +28,13 @@
 @import "../_modules/partnersection/partnerSection";
 @import "../_modules/footer/footer";
 
+
 @import "../_modules/teamslist/teamslist";
 @import "../_modules/shopbanner/shopbanner";
 
+
 @import "../_modules/newscards/newscards";
+
 
 @import "../_modules/chisiamotext/chisiamotext";
 
