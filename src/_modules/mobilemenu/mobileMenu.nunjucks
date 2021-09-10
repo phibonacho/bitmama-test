@@ -28,6 +28,7 @@
                 <ul class="dropdown__options__list">
                   <li class="dropdown__options__item">
                     <a href="#">ENGLISH</a>
+                    <a href="./index.html" class="dropdown__options__close">X</a>
                   </li>
                 </ul>
               </div>

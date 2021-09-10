@@ -8,6 +8,7 @@
 {% import "_modules/footer/footer.nunjucks" as footer %}
 
 {% block content %}
+
   <div class="main-container">
 
     {{ header.content({
@@ -32,4 +33,5 @@
     {{ footer.content() }}
 
   </div>
+  
 {% endblock %}

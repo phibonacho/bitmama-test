@@ -133,6 +133,12 @@
 
               .dropdown__options__item {
                 padding: 2rem 0;
+
+                .dropdown__options__close {
+                  position: absolute;
+                  top: 12%;
+                  right: 10%;
+                }
               }
             }
           }
